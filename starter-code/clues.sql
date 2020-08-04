@@ -54,3 +54,26 @@
 
 
 -- She's in ____________________________!
+
+
+
+clue #1
+SELECT name, population FROM countries WHERE region = 'Southern Europe' ORDER BY population asc LIMIT 1;
+ 
+ clue #2
+SELECT * FROM countrylanguages WHERE countrycode = 'VAT';
+
+clue #3
+SELECT * FROM countrylanguages WHERE language = 'Italian';
+SELECT name FROM countries WHERE code = 'SMR';
+
+clue #4
+SELECT * FROM cities WHERE countrycode = 'SMR' AND NOT name = 'San Marino';
+
+clue #5
+SELECT name,countrycode FROM cities WHERE name LIKE 'San M%';
+
+clue #6
+SELECT * FROM cities WHERE id = 69;
+last one we didn't do together
+SELECT * FROM cities WHERE population = 91084;
